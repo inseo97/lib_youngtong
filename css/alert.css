@@ -1,0 +1,446 @@
+.board {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.board h3 {
+  margin: 20px 0 14px 0 !important;
+  font-size: 20px;
+  color: #000;
+  font-family: "Malgun Gothic";
+  font-weight: bold;
+  letter-spacing: -0.05em;
+}
+
+.board:after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+.board img {
+  vertical-align: middle;
+}
+.board caption {
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  width: 1px;
+  height: 1%;
+  font-size: 0;
+  line-height: 0;
+}
+
+/******************************* 페이지수 **************************************/
+.boardtop {
+  margin: 0 0 10px 0;
+  padding: 10px 0 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+.page_num {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+.page_num span {
+  color: #3e85ef;
+  font-weight: bold;
+  margin: 0px 5px;
+  padding: 0px;
+  line-height: 35px;
+}
+
+/******************************* 검색 **************************************/
+.board_search {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: auto;
+  float: right;
+  text-align: right;
+}
+.board_search::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.board_search fieldset {
+  border: 0;
+  margin: 5.5px 0;
+  padding: 0;
+  clear: both;
+}
+.board_search fieldset:after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
+}
+.board_search fieldset * {
+  vertical-align: top;
+}
+.board_search legend {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.board_search select {
+  margin-right: 2px;
+}
+
+.board_search .inputText {
+  width: 300px;
+  border: 1px solid #dfdfdf;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board_search button {
+  float: right;
+  width: 40px;
+  height: max-content;
+  background: #1f4787;
+  border-radius: 12rem;
+  padding: 1px 3px 1px 3px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 0 0 5px;
+  color: #ffffff;
+}
+.board_search button:hover {
+  background: #3e85ef;
+}
+/******************************* 리스트 **************************************/
+.board_list {
+  margin: 0px 0px 50px 0px;
+  border: 0;
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 2px solid #333237;
+  border-bottom: 2px solid #333237;
+}
+.board_list.mb10 {
+  margin: 0 0 10px 0 !important;
+}
+.board_list thead th {
+  padding: 12px 11px 14px 10px;
+  white-space: nowrap;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e1e1e1;
+}
+.board_list thead th:first-child {
+  border-left: none;
+}
+.board_list tbody th,
+.board_list tbody td {
+  margin: 0px;
+  padding: 15px 7px;
+  white-space: normal;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: center;
+  line-height: normal;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  background: #ffffff !important;
+}
+.board_list tbody th {
+  letter-spacing: -0.5px;
+  border-left: none;
+}
+.board_list tbody th span {
+  display: inline;
+  background: #1f4787;
+  color: #ffffff;
+  letter-spacing: -1px;
+  padding: 0px 11px 4px 11px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.board_list tbody td.subject {
+  text-align: center;
+  padding: 7px 10px;
+  margin: 0px;
+  white-space: normal;
+}
+.board_list tbody td.subject a {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.board_list tbody td img {
+  margin: 0px 5px;
+}
+.board_list tbody td span {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 2px 3px 5px 3px;
+  border-radius: 2px;
+  width: 45px;
+}
+
+.board_list .num {
+  width: 30px;
+}
+.board_list .category {
+  width: 125px;
+}
+.board_list .subject {
+  width: auto;
+}
+.board_list .writer {
+  width: 100px;
+}
+
+.board_list .lib {
+  width: 60px;
+}
+.board_list .cond {
+  width: 50px;
+}
+.board_list .ans {
+  width: 50px;
+}
+.board_list .counter {
+  width: 50px;
+}
+
+.board_list tbody td.b_tit {
+  text-align: left;
+}
+
+.board_list .in_cond {
+  border: 1px solid #e1e1e1;
+  width: 70px;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list .in_tit {
+  border: 1px solid #e1e1e1;
+  width: auto;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list .in_ret {
+  border: 1px solid #e1e1e1;
+  width: 100px;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list .in_refe {
+  border: 1px solid #e1e1e1;
+  width: 170px;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list .in_sign {
+  border: 1px solid #e1e1e1;
+  width: 120px;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list .in_res {
+  border: 1px solid #e1e1e1;
+  width: 30px;
+  padding: 10px 7px;
+  word-break: break-all;
+}
+.board_list tbody td.in_refe {
+  text-align: left;
+}
+.board_list tbody td.in_refe img {
+  max-width: 64px;
+  height: 20px;
+  margin: 0;
+  padding: 3px 0 0 0;
+}
+
+/********************* break point -300- *********************/
+@media screen and (max-width: 760px) {
+  .board_list .b_num {
+    display: none;
+  }
+  .board_list .b_div {
+    display: none;
+  }
+
+  .board_list .b_tit {
+    padding: 5px 3px;
+    width: 100px !important;
+  }
+  .board_list .b_lib {
+    padding: 0px;
+  }
+  .board_list .b_cond {
+    padding: 0px;
+  }
+  .board_list .b_loan {
+    padding: 0px;
+  }
+  .board_list .b_ret {
+    padding: 0px;
+  }
+  .board_list .b_over {
+    padding: 0px;
+  }
+
+  .board_list .in_cond {
+    padding: 0px;
+  }
+  .board_list .in_tit {
+    padding: 0px;
+  }
+  .board_list .in_ret {
+    padding: 0px;
+  }
+  .board_list .in_refe {
+    padding: 5px;
+    width: 100px !important;
+  }
+  .board_list .in_sign {
+    padding: 0px;
+  }
+  .board_list .in_res {
+    padding: 0px;
+  }
+
+  .board_list tbody td.in_refe img {
+    max-width: 44px;
+    height: 16px;
+    margin: 0;
+    padding: 3px 0 0 0;
+  }
+
+  .board_search select.wid50p {
+    width: 60px;
+  }
+}
+
+/* 게시판 네비 */
+.board_navi {
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  float: right;
+  width: 75%;
+}
+.board_navi * {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.board_navi a {
+  color: #383838;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.board_navi a.first {
+  display: inline-block;
+  margin-right: 10px;
+}
+.board_navi a.last {
+  display: inline-block;
+  margin-left: 10px;
+}
+.board_navi a:hover,
+.board_navi a:active,
+.board_navi a:focus {
+  color: #3e85ef;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+.board_navi strong {
+  background: #3e85ef none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #ffffff;
+  height: 25px;
+  line-height: 25px;
+  width: 25px;
+}
+
+.board_navi img {
+  opacity: 0.6;
+}
+/******************************* 이전글,다음글 **************************************/
+.board_bottom {
+  margin: 30px 0 0 0;
+  padding: 0;
+  width: 100%;
+}
+.board_bottom dl {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #333237;
+  border-bottom: 1px solid #333237;
+}
+.board_bottom dt {
+  margin: 0 0 0px 0px;
+  height: 35px;
+  line-height: 38px;
+  padding: 0px 0 10px 0;
+  width: 15%;
+  font-weight: bold;
+  float: left;
+  background: #f4f4f4;
+  color: #444;
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.board_bottom dd {
+  margin: 0 0 0px 0px;
+  height: 35px;
+  line-height: 38px;
+  padding: 0px 0 10px 20px;
+  float: left;
+  width: 85%;
+  float: left;
+  border-bottom: 1px solid #d8d8d8;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/******************************* 하단 버튼 **************************************/
+.board_btn {
+  float: right;
+  margin: 20px 0px 20px 0;
+  padding: 0 0 3px 0;
+  overflow: hidden;
+}
+.board_btn_left {
+  float: left;
+  margin-top: 10px;
+  padding: 0 0 3px 0;
+  overflow: hidden;
+}
+.board_btn_center {
+  margin-top: 30px;
+  padding: 0 0 3px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#tag {
+  background-color: #3e85ef;
+
+  color: #ffffff;
+  font-size: 0.6em;
+
+  padding: 0px 7px 2px;
+  border-radius: 12rem;
+}
